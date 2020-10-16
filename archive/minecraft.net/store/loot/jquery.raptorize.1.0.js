@@ -32,11 +32,11 @@ $("#checkout").click(function(){
         bottom: '-170px'
     },"fast");
     $("#raptorz").delay("fast")
-    /*$("#raptorz").animate({
+    $("#raptorz").animate({
         left: '-512px',
         right: 'auto'
     },"fast");
-    $("#raptorz").hide();
+    /*$("#raptorz").hide();
     $("#raptorz").animate({
         bottom: '-747px',
         right: '0',
