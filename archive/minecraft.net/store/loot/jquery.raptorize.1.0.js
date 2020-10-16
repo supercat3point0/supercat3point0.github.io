@@ -1,5 +1,5 @@
 // don't know what this does but apparently it was in the original code, so i'm just going to comment it out
-/**
+/*
 // Determine Entrance
 if(options.enterOn == 'timer') {
     setTimeout(init, options.delayTime);
@@ -20,4 +20,4 @@ if(options.enterOn == 'timer') {
         }
     }, true);
 };
-**/
+*/
