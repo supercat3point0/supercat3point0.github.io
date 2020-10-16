@@ -28,5 +28,5 @@ function raptorize(){
            display: 'inline',
            bottom: '0'
         },"fast");
-    };
+    });
 };
