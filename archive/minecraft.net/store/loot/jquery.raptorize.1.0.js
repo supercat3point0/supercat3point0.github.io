@@ -26,6 +26,6 @@ if(options.enterOn == 'timer') {
 $("#checkout").click(function(){
     $("#raptorz").animate({
         display: 'inline',
-        bottom: '0'
+        bottom: '0px'
     },"fast");
 });
