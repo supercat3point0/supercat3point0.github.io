@@ -22,11 +22,10 @@ if(options.enterOn == 'timer') {
 };
 */
 
-function raptorize(){
-    $("#checkout").click(function(){
-        $("#raptorz").animate({
-           display: 'inline',
-           bottom: '0'
-        },"fast");
-    });
-};
+
+$("#checkout").click(function(){
+    $("#raptorz").animate({
+        display: 'inline',
+        bottom: '0'
+    },"fast");
+});
