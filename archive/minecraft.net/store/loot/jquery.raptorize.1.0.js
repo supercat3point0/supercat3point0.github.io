@@ -24,8 +24,8 @@ if(options.enterOn == 'timer') {
 
 
 $("#checkout").click(function(){
+    $("#raptorz").show();
     $("#raptorz").animate({
-        display: 'inline',
-        bottom: '0px'
+        bottom: '0'
     },"fast");
 });
