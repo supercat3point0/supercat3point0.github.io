@@ -36,11 +36,11 @@ $("#checkout").click(function(){
         left: '-512px',
         right: 'auto'
     },"fast");
-    $("#raptorz").hide()
+    $("#raptorz").hide();
     $("#raptorz").animate({
-        bottom: 'initial',
-        right: 'initial',
-        left: 'initial',
-        top: 'initial'
+        bottom: '-747px',
+        right: '0',
+        left: 'auto',
+        top: 'auto'
     });
 });
