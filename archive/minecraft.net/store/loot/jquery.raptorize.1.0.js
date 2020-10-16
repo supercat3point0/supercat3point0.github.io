@@ -10,11 +10,11 @@ if(options.enterOn == 'timer') {
     })
 } else if(options.enterOn == 'konami-code'){
     var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
-    $(window).bind("keydown.raptorz", function(e){
+    $(window).on("keydown.raptorz", function(e){
         kkeys.push( e.keyCode );
         if ( kkeys.toString().indexOf( konami ) >= 0 ) {
             init();
-            $(window).unbind('keydown.raptorz');
+            $(window).off('keydown.raptorz');
         }
     }, true);
 };
