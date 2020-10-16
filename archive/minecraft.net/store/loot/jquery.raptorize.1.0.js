@@ -28,10 +28,10 @@ $("#checkout").click(function(){
     $("#raptorz").animate({
         bottom: '0'
     },"fast");
-    /*$("#raptorz").animate({
+    $("#raptorz").animate({
         bottom: '-170px'
     },"fast");
-    $("#raptorz").delay("fast")
+    /*$("#raptorz").delay("fast")
     $("#raptorz").animate({
         left: '-512px',
         right: 'auto'
