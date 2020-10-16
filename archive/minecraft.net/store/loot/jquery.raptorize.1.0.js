@@ -28,7 +28,7 @@ $("#checkout").click(function(){
     $("#raptorz").animate({
         bottom: '0'
     },"fast");
-    $("#raptorz").animate({
+    /*$("#raptorz").animate({
         bottom: '-170px'
     },"fast");
     $("#raptorz").delay("fast")
@@ -42,5 +42,5 @@ $("#checkout").click(function(){
         right: '0',
         left: 'auto',
         top: 'auto'
-    });
+    });*/
 });
