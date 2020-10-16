@@ -31,8 +31,8 @@ $("#checkout").click(function(){
     $("#raptorz").animate({
         bottom: '-170px'
     },"fast");
-    /*$("#raptorz").delay("fast")
-    $("#raptorz").animate({
+    $("#raptorz").delay("fast")
+    /*$("#raptorz").animate({
         left: '-512px',
         right: 'auto'
     },"fast");
