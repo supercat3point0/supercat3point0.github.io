@@ -38,9 +38,9 @@ $("#checkout").click(function(){
     },"fast");
     //$("#raptorz").hide();
     $("#raptorz").animate({
-        bottom: '-747px',
-        right: '0',
-        left: 'auto',
-        top: 'auto'
+        bottom: 'initial',
+        right: 'initial',
+        left: 'initial',
+        top: 'initial'
     },"0");
 });
