@@ -21,3 +21,12 @@ if(options.enterOn == 'timer') {
     }, true);
 };
 */
+
+function raptorize(){
+    $("#checkout").click(function(){
+        $("#raptorz").animate({
+           display: 'inline',
+           bottom: '0'
+        },"fast");
+    };
+};
