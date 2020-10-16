@@ -42,5 +42,5 @@ $("#checkout").click(function(){
         right: '0',
         left: 'auto',
         top: 'auto'
-    });
+    },"0");
 });
