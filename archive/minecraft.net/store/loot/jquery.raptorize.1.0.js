@@ -37,10 +37,10 @@ $("#checkout").click(function(){
         right: 'auto'
     },"fast");
     $("#raptorz").hide();
-    /*$("#raptorz").animate({
+    $("#raptorz").animate({
         bottom: '-747px',
         right: '0',
         left: 'auto',
         top: 'auto'
-    });*/
+    });
 });
