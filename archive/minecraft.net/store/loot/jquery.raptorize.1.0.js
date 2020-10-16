@@ -22,26 +22,25 @@ if(options.enterOn == 'timer') {
 };
 */
 
-$(document).ready(function{
-    $("#checkout").click(function(){
-        $("#raptorz").show()
-        .animate({
-            bottom: '0'
-        },"fast")
-        .animate({
-            bottom: '-170px'
-        },"fast")
-        .delay("fast")
-        .animate({
-            left: '-512px',
-            right: 'auto'
-        })
-        .hide()
-        .animate({
-            bottom: 'initial',
-            right: 'initial',
-            left: 'initial',
-            top: 'initial'
-        });
+
+$("#checkout").click(function(){
+    $("#raptorz").show()
+    .animate({
+        bottom: '0'
+    },"fast")
+    .animate({
+        bottom: '-170px'
+    },"fast")
+    .delay("fast")
+    .animate({
+        left: '-512px',
+        right: 'auto'
+    })
+    .hide()
+    .animate({
+        bottom: 'initial',
+        right: 'initial',
+        left: 'initial',
+        top: 'initial'
     });
 });
