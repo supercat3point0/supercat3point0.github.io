@@ -24,20 +24,20 @@ if(options.enterOn == 'timer') {
 
 $(document).ready(function{
     $("#checkout").click(function(){
-        $("#raptorz").show();
-        $("#raptorz").animate({
+        $("#raptorz").show()
+        .animate({
             bottom: '0'
-        },"fast");
-        $("#raptorz").animate({
+        },"fast")
+        .animate({
             bottom: '-170px'
-        },"fast");
-        $("#raptorz").delay("fast");
-        $("#raptorz").animate({
+        },"fast")
+        .delay("fast")
+        .animate({
             left: '-512px',
             right: 'auto'
-        });
-        $("#raptorz").hide();
-        $("#raptorz").animate({
+        })
+        .hide()
+        .animate({
             bottom: 'initial',
             right: 'initial',
             left: 'initial',
