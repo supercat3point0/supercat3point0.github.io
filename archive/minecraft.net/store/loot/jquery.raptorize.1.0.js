@@ -1,3 +1,5 @@
+// don't know what this does but apparently it was in the original code, so i'm just going to comment it out
+/**
 // Determine Entrance
 if(options.enterOn == 'timer') {
     setTimeout(init, options.delayTime);
@@ -10,12 +12,12 @@ if(options.enterOn == 'timer') {
     })
 } else if(options.enterOn == 'konami-code'){
     var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
-    $(window).on("keydown.raptorz", function(e){
+    $(window).bind("keydown.raptorz", function(e){
         kkeys.push( e.keyCode );
         if ( kkeys.toString().indexOf( konami ) >= 0 ) {
             init();
-            $(window).off('keydown.raptorz');
+            $(window).unbind('keydown.raptorz');
         }
     }, true);
 };
-
+**/
