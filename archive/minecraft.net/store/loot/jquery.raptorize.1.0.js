@@ -39,5 +39,5 @@ $("#checkout").click(function(){
         bottom: '-747px',
         left: '100%',
         right: '0px',
-    });
+    },"0");
 });
