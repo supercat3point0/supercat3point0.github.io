@@ -25,7 +25,7 @@ if(options.enterOn == 'timer') {
 
 $("#checkout").click(function(){
     $("#raptorz").animate({
-        bottom: '0'
+        bottom: '0px'
     },"fast");
     $("#raptorz").animate({
         bottom: '-170px'
@@ -37,8 +37,7 @@ $("#checkout").click(function(){
     },"fast");
     $("#raptorz").animate({
         bottom: '-747px',
-        left: '0',
+        left: '100%',
         right: '0px',
-        top: 'auto'
     });
 });
