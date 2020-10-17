@@ -24,7 +24,6 @@ if(options.enterOn == 'timer') {
 
 
 $("#checkout").click(function(){
-    $("#raptorz").show();
     $("#raptorz").animate({
         bottom: '0'
     },"fast");
@@ -36,11 +35,10 @@ $("#checkout").click(function(){
         left: '-512px',
         right: 'auto'
     },"fast");
-    //$("#raptorz").hide();
     $("#raptorz").animate({
         bottom: 'initial',
         right: 'initial',
         left: 'initial',
         top: 'initial'
-    },"0");
+    });
 });
