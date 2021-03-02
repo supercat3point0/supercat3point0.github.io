@@ -35,9 +35,4 @@ $("#checkout").click(function(){
         left: '-512px',
         right: 'auto'
     },"fast");
-    $("#raptorz").animate({
-        bottom: '-747px',
-        right: '0px',
-        left: 'auto'
-    },0);
 });
