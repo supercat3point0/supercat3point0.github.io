@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Elevator</title>
+<script src="js/elevator.js"></script>
+<style>
+.building {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="building">
+<div id="floor10">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                              ^
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre>
+ ___________________ 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor9">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                           ^   
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor8">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                         ^     
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor7">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                       ^       
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor6">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                     ^         
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor5">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                   ^           
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor4">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+                 ^             
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor3">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+               ^               
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floor2">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+             ^                 
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|                   |
+</pre>
+</div>
+<div id="floorL">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+           ^                   
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre> 
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | |   | |   | |
+| |___| |___| |___| |
+|  ___   ___   ___  |
+| |   | | | | |   | |
+| |___| |.|.| |___| |
+|_______|_|_|_______|
+</pre>
+</div>
+<div id="floorP1">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+         ^                     
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre>
+ /      |_                     
+/______   |_                   
+\           |_                 
+ \            |_               
+  ___     ___     ___     ___  
+ /___\   /___\   /___\   /___\ 
+|o___o| |o___o| |o___o| |o___o|
+ -   -   -   -   -   -   -   - 
+</pre>
+</div>
+<div id="floorP2">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+      ^                        
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre>
+ /      |_                     
+/______   |_                   
+\           |_                 
+ \            |_               
+  ___     ___     ___     ___  
+ /___\   /___\   /___\   /___\ 
+|o___o| |o___o| |o___o| |o___o|
+ -   -   -   -   -   -   -   - 
+</pre>
+</div>
+<div id="floorP3">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+   ^                           
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre>
+ /      |_                     
+/______   |_                   
+\           |_                 
+ \            |_               
+  ___     ___     ___     ___  
+ /___\   /___\   /___\   /___\ 
+|o___o| |o___o| |o___o| |o___o|
+ -   -   -   -   -   -   -   - 
+</pre>
+</div>
+<div id="floorB">
+<pre>
+B P3 P2 P1 L 2 3 4 5 6 7 8 9 10
+^                              
+</pre>
+<div>
+<code class="floor10">10</code>
+<code class="floor9">9</code>
+<code class="floor8">8</code>
+<code class="floor7">7</code>
+<br />
+<code class="floor6">6</code>
+<code class="floor5">5</code>
+<code class="floor4">4</code>
+<code class="floor3">3</code>
+<br />
+<code class="floor2">2</code>
+<code class="floorL">L</code>
+<code class="floorP1">P1</code>
+<code class="floorP2">P2</code>
+<br />
+<code class="floorP3">P3</code>
+<code class="floorB">B</code>
+</div>
+<pre>
+  | |     | |     | |  
+  | |     | |     | |  
+  | |    _|_|_    | |  
+  |_|   | ___ |   |_|  
+ |||||  || | ||  ||||| 
+ |||||  ||_|_||  ||||| 
+ _|_|_   _|_|_   _|_|_ 
+|     | |     | |     |
+|_____| |_____| |_____|
+</pre>
+</div>
+<div>
+<pre>
+<a href="https://tholman.com/elevator.js/">Elevator.js</a> demo by <a href="https://supercat3point0.github.io/">supercat3point0</a>.
+Elevator.js by <a href="https://tholman.com/">Tim Holman</a>. You can get it <a href="https://github.com/tholman/elevator.js">here</a>
+The song used is Local Forcast by Kevin MacLeod.
+Local Forecast - Elevator Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>)
+Licensed under Creative Commons: By Attribution 3.0 License
+<a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>
+</pre>
+</div>
+</div>
+<script>
+window.onload = function() {
+  var floor10 = new Elevator({
+    element: document.querySelectorAll(".floor10"),
+    targetElement: document.querySelector("#floor10"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor9 = new Elevator({
+    element: document.querySelectorAll(".floor9"),
+    targetElement: document.querySelector("#floor9"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor8 = new Elevator({
+    element: document.querySelectorAll(".floor8"),
+    targetElement: document.querySelector("#floor8"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor7 = new Elevator({
+    element: document.querySelectorAll(".floor7"),
+    targetElement: document.querySelector("#floor7"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor6 = new Elevator({
+    element: document.querySelectorAll(".floor6"),
+    targetElement: document.querySelector("#floor6"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor5 = new Elevator({
+    element: document.querySelectorAll(".floor5"),
+    targetElement: document.querySelector("#floor5"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor4 = new Elevator({
+    element: document.querySelectorAll(".floor4"),
+    targetElement: document.querySelector("#floor4"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor3 = new Elevator({
+    element: document.querySelectorAll(".floor3"),
+    targetElement: document.querySelector("#floor3"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floor2 = new Elevator({
+    element: document.querySelectorAll(".floor2"),
+    targetElement: document.querySelector("#floor2"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floorL = new Elevator({
+    element: document.querySelectorAll(".floorL"),
+    targetElement: document.querySelector("#floorL"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floorP1 = new Elevator({
+    element: document.querySelectorAll(".floorP1"),
+    targetElement: document.querySelector("#floorP1"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floorP2 = new Elevator({
+    element: document.querySelectorAll(".floorP2"),
+    targetElement: document.querySelector("#floorP2"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floorP3 = new Elevator({
+    element: document.querySelectorAll(".floorP3"),
+    targetElement: document.querySelector("#floorP3"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+  var floorB = new Elevator({
+    element: document.querySelectorAll(".floorB"),
+    targetElement: document.querySelector("#floorB"),
+    mainAudio: "audio/elevator.mp3",
+    endAudio: "audio/ding.mp3"
+  });
+}
+</script>
+</body>
+</html>
